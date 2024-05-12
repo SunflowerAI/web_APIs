@@ -40,6 +40,7 @@ jobs:
         with:
           name: backend-app
           path: |
+            release.zip
             !venv/
 
   deploy:
