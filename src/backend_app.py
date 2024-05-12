@@ -17,10 +17,6 @@ def hello():
 def test_get():
     token = request.authorization.token
     print("Successful Get Test")
-    if len(token) > 0:
-        print(">0")
-    else:
-        print("=0")
     return "Hello world", 200
 
 @app.route("/test", methods=["POST"])
