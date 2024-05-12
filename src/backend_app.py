@@ -8,12 +8,12 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins":"*"}})
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def hello():
     print("Successful Get Test")
     return "Hello world", 200
 
-@app.route("/test")
+@app.route("/test", methods=["GET"])
 def test_get():
     token = request.authorization.token
     print("Successful Get Test")
