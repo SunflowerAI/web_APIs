@@ -31,4 +31,5 @@ def test_post():
     return response, 200
 
 if __name__=="__main__":
+    print("*****************\nRunning in src direct\n**************")
     app.run(debug=True)
